@@ -20,7 +20,6 @@ namespace BigShop.Model.Models
 
         public int? DisplayOder { get; set; }
 
-        [MaxLength(10)]
         [Required]
         public int GroupID { get; set; }
 
@@ -28,7 +27,7 @@ namespace BigShop.Model.Models
         public virtual MenuGroup MenuGroup { get; set; }
 
         [MaxLength(10)]
-        public string Targer { get; set; }
+        public string Target { get; set; }
 
         public bool Status { get; set; }
     }

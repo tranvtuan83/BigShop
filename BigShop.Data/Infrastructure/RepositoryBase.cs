@@ -28,11 +28,15 @@ namespace BigShop.Data.Infrastructure
 
         #endregion properties
 
+        #region Contructor
+
         protected RepositoryBase(IDbFactory dbFactory)
         {
             DbFactory = dbFactory;
             dbSet = DbContext.Set<T>();
         }
+
+        #endregion Contructor
 
         #region Implementation
 

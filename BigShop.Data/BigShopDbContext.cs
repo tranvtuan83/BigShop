@@ -10,7 +10,7 @@ namespace BigShop.Data
 {
     public class BigShopDbContext : DbContext
     {
-        public BigShopDbContext() : base("BigShopConnection")
+        public BigShopDbContext() : base("BigShop")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
@@ -37,7 +37,6 @@ namespace BigShop.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
         }
     }
 }
